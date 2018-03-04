@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+button{
+  padding: 14px !important;
+  margin: 0px !important;
+}
+
 #board{
   display: flex;
   width: 300px;
@@ -42,7 +47,6 @@
   border-bottom: 0;
 }
 
-
 .square:nth-child(1),.square:nth-child(2),.square:nth-child(3){
   border-top:0;
 }
@@ -53,4 +57,12 @@
 
 .square:nth-child(3n){
   border-right:0;
+}
+
+#status{
+  padding: 2px;
+  font-size: 32px;
+  color: red;
+  display: flex;
+  user-select: none;
 }

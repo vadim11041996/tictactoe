@@ -55,7 +55,8 @@ class App extends Component {
       })
     }
 
-    /*if(this.gameState.turn == 'O' && !this.gameState.gameEnded) {
+    //Play with PC    
+    if(this.gameState.turn == 'O' && !this.gameState.gameEnded) {
       this.gameState.gameLocked = true;
       setTimeout(()=> {
         do {
@@ -65,7 +66,7 @@ class App extends Component {
         this.clicked(document.querySelectorAll('.square')[random]);
       }, 1000);
 
-    }*/
+    }
 
   }
 

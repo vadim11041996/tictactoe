@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './bootstrap.css';
+import Header from './components/Header';
 
 
 class App extends Component {
@@ -55,7 +56,7 @@ class App extends Component {
       })
     }
 
-    //Play with PC    
+    //Play with PC
     if(this.gameState.turn == 'O' && !this.gameState.gameEnded) {
       this.gameState.gameLocked = true;
       setTimeout(()=> {
@@ -90,8 +91,12 @@ class App extends Component {
         <div className="row">
 
           <div className="col-md-2">
-             <div>
-                <span>Wins:</span>
+             <div className="colWins">
+                <span>Wins:
+                  <span className='score'>
+                    0
+                  </span>
+                </span>
              </div>
           </div>
 
@@ -99,7 +104,7 @@ class App extends Component {
              <div id="game">
 
                <div id="head">
-                   Tic Tac Game
+                <Header />
                </div>
 
                <div id="board" onClick={(e)=>this.clicked(e.target)}>

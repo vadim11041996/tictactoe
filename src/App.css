@@ -9,6 +9,27 @@ button{
   margin: 0px !important;
 }
 
+.colWins{
+  position: absolute;
+  top: 75px;
+}
+
+span{
+  font-size: 30px;
+  color: blueviolet;
+}
+
+.gameName{
+  background: orange ;
+  opacity: 0.4;
+  border-radius: 10%;
+  border: solid 2px blue;
+}
+
+.score{
+  color: red;
+}
+
 #board{
   display: flex;
   width: 300px;
